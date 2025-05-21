@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/149693449?v=4" type="image/x-icon">
+    <title>Checador de Inteiro Sem Sinal de 32 Bits</title>
+</head>
+<body style="font-family: monospace; background-color: #000; color: #fff; display: flex; justify-content: center; align-items: center; margin: 10px;">
+    <div id="text-list" style="display: none;">
+        <div id="Project">Esta é a página do projeto Git to Test (Gi2Text).</div>
+        <div id="AppDesc">Por enquanto ela constrói um terminal e testa se uma string é reconhecida como um inteiro (/^[+-]?\\d+$/. em JavaScript) e se o valor é suportado por tipo inteiro sem sinal de 32 bits em linguagens que o tipo é habilitado.</div>
+        <div id="EnterIn">Digite uma string de entrada para checá-la e receber uma saída.</div>
+        <div id="NotInt">A string '${}' não é reconhecida como inteiro.</div>
+        <div id="NotUint">A string '${}' como valor tipo inteiro não é suportado sem sinal de 32 bits.</div>
+        <div id="IsUint">A string '${}' como valor tipo inteiro é suportado sem sinal de 32 bits.</div>
+    </div>
+    <div id="terminal" style="width: 100%; background-color: #111; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
+        <div id="output" style="height: calc(100vh - 2*10px - 2*20px - 36px); overflow-y: auto; white-space: pre-wrap; word-wrap: break-word;"></div>
+        <input type="text" id="input" autofocus style="height: 36px; width: 100%; padding: 10px; border: none; background-color: #ccc; color: #000; outline: none; font-size: 16px; box-sizing: border-box;">
+    </div>
+    <script src="UIntCheck Script.js" defer></script>
+</body>
+</html>
